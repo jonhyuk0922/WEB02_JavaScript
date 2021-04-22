@@ -8,7 +8,7 @@ JS 는 왜 하나? HTML은 정적이기 때문에 , 사용자와 소통하고자
 
 <h3>2. HTML과 JS의 만남</h3>
 
-1) [script태그.html](script태그.html)
+1) [script태그.html](blob/script태그.html)
  <br>html 에서 자바스크립트는 script 태그 안에서 쓰인다.
  
 2) [이벤트.html](이벤트.html)
