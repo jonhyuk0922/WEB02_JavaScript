@@ -1,10 +1,12 @@
 # WEB02_JavaScript
 
-##1.Intro
+<h3>1.Intro</h3>
+
 JS 는 왜 하나? HTML은 정적이기 때문에 , 사용자와 소통하고자 만들어졌다.
 예를 들어, HTML에 1+1 을 넣었을 떄랑 JS에 1+1을 넣었을 때의 결과는 다르다. HTML 은 1+1 을 반환하지만 , JS는 2를 돌려준다.
 
-##2. HTML과 JS의 만남
+
+<h3>2. HTML과 JS의 만남</h3>
 
 1) [script태그.html] (script태그.html)
  html 에서 자바스크립트는 script 태그 안에서 쓰인다.
