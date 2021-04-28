@@ -20,13 +20,17 @@
 <body>
 <h1><span style="color:turquoise;">4월 공부 계획(4/21 ~ 4/30)</span></h1>
 
-<input type="button" value ="night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-">
-<input type="button" value ="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
+<input id="night_day" type ="button" value = "night" onclick="
+    if (document.querySelector('#night_day').value =='night'){
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#night_day').value = 'day';
+
+    } else {
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#night_day').value = 'night';
+    }
 ">
 <h2>Intro</h2>
 <p>4월 동안 내가 공부할 계획들이다.<br> 어제 면접을 통해 기초를 쌓아야하는 걸 인지했다. 
