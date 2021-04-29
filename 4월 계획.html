@@ -4,15 +4,8 @@
     <title>April Study plan</title>
     <meta charset="utf-8">
     <style>
-        .js{
-            font-weight:bold;
-            color:teal;
-        }
         #first{
             color:tomato;
-        }
-        span{
-            color:thistle;
         }
     </style>
 </head>
@@ -20,16 +13,31 @@
 <body>
 <h1><span style="color:turquoise;">4월 공부 계획(4/21 ~ 4/30)</span></h1>
 
-<input id="night_day" type ="button" value = "night" onclick="
-    if (document.querySelector('#night_day').value =='night'){
-        document.querySelector('body').style.backgroundColor='black';
-        document.querySelector('body').style.color='white';
-        document.querySelector('#night_day').value = 'day';
+<input type ="button" value = "night" onclick="
+    var target = document.querySelector('body')
+    if (this.value =='night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value = 'day';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'powderblue';
+            i = i+1;
+        }
 
     } else {
-        document.querySelector('body').style.backgroundColor='white';
-        document.querySelector('body').style.color='black';
-        document.querySelector('#night_day').value = 'night';
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value = 'night';
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'blue';
+            i = i+1;
+        }
     }
 ">
 <h2>Intro</h2>
@@ -43,15 +51,15 @@
 
 <h2 style="background-color:coral; color:powderblue">체크리스트</h2>
 <ol><span class="js">
-    <p><li><input type="checkbox"> <a href="1.html"><span id="first" class="js">HTML</span></a></li> </p>
+    <p><li><input type="checkbox"> <a href="1.html"><span id="first">HTML</span></a></li> </p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <p><li><input type="checkbox"> <a href="2.html"><span class="js">Css</span></a></li></p>
+     <p><li><input type="checkbox"> <a href="2.html">Css</a></li></p>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <p><li><input type="checkbox"> <a href="3.html"><span class="js">JavaScript</span></a></li></p>
+     <p><li><input type="checkbox"> <a href="3.html">JavaScript</a></li></p>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </ol>
 <p style="margin-top: 40px;"></p>
 <p> <div>다음은 무엇일까? </div><br><span class="js">잊지말아야할 건 이번주 일요일 코테준비랑 텐서플로우 복습이다! </span>
-</span><br><br> <a href="https://jonhyuk0922.tistory.com" target="_blank" title="my home"><span style = "font-weight:bold; color: rgb(255, 153, 0);">-조녁코딩-</span></a></p>
+</span><br><br> <a href="https://jonhyuk0922.tistory.com" target="_blank" title="my site">-조녁코딩-</a></p>
 <br><br>
 </body>
